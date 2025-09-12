@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,13 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-97733a8ea5fc01a894890b48a54654e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-00217dde8ce72fc90f13fd9dbcd9a85e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -141,7 +142,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -184,7 +185,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../assets/isampleslogopetal.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../assets/isampleslogopetal.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../assets/isampleslogopetal.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/isamplesorg" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
@@ -391,7 +393,7 @@ Subtitle
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1757595569376" data-listing-file-modified-sort="1757595570554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1283" data-listing-title-sort="Sampled Feature Type vocabulary" data-listing-filename-sort="sampled_feature_type.qmd">
+<tr data-index="0" data-listing-date-sort="1757691037309" data-listing-file-modified-sort="1757691038444" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1283" data-listing-title-sort="Sampled Feature Type vocabulary" data-listing-filename-sort="sampled_feature_type.qmd">
 <td>
 <a href="../models/generated/vocabularies/sampled_feature_type.html" class="title listing-title">Sampled Feature Type vocabulary</a>
 </td>
@@ -401,7 +403,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1757595571902" data-listing-file-modified-sort="1757595573135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1917" data-listing-title-sort="iSamples Material Sample Object Type Vocabulary" data-listing-filename-sort="material_sample_object_type.qmd">
+<tr data-index="1" data-listing-date-sort="1757691039780" data-listing-file-modified-sort="1757691040998" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1917" data-listing-title-sort="iSamples Material Sample Object Type Vocabulary" data-listing-filename-sort="material_sample_object_type.qmd">
 <td>
 <a href="../models/generated/vocabularies/material_sample_object_type.html" class="title listing-title">iSamples Material Sample Object Type Vocabulary</a>
 </td>
@@ -411,7 +413,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="1757595566840" data-listing-file-modified-sort="1757595568050" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1870" data-listing-title-sort="iSamples Materials Vocabulary" data-listing-filename-sort="material_type.qmd">
+<tr data-index="2" data-listing-date-sort="1757691034794" data-listing-file-modified-sort="1757691035990" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1870" data-listing-title-sort="iSamples Materials Vocabulary" data-listing-filename-sort="material_type.qmd">
 <td>
 <a href="../models/generated/vocabularies/material_type.html" class="title listing-title">iSamples Materials Vocabulary</a>
 </td>
@@ -421,7 +423,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="3" data-listing-file-modified-sort="1757595533301" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-filename-sort="readme.md">
+<tr data-index="3" data-listing-file-modified-sort="1757691012780" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-filename-sort="readme.md">
 <td>
 <a href="../models/generated/vocabularies/readme.html" class="title listing-title">&nbsp;</a>
 </td>
@@ -451,7 +453,7 @@ Subtitle
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1757595604061" data-listing-file-modified-sort="1757595606400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3658" data-listing-title-sort="Biology Extension: Basic taxon classes for biological entity" data-listing-filename-sort="biology_sampledfeature_extension.md">
+<tr data-index="0" data-listing-date-sort="1757691072068" data-listing-file-modified-sort="1757691074382" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3658" data-listing-title-sort="Biology Extension: Basic taxon classes for biological entity" data-listing-filename-sort="biology_sampledfeature_extension.md">
 <td>
 <a href="../models/generated/extensions/biology_sampledfeature_extension.html" class="title listing-title">Biology Extension: Basic taxon classes for biological entity</a>
 </td>
@@ -461,7 +463,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1757595590043" data-listing-file-modified-sort="1757595593955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4948" data-listing-title-sort="Earth and Environmental Science extension -  Material sample type" data-listing-filename-sort="earthenv_materialsampleobject_type.md">
+<tr data-index="1" data-listing-date-sort="1757691058013" data-listing-file-modified-sort="1757691061883" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4948" data-listing-title-sort="Earth and Environmental Science extension -  Material sample type" data-listing-filename-sort="earthenv_materialsampleobject_type.md">
 <td>
 <a href="../models/generated/extensions/earthenv_materialsampleobject_type.html" class="title listing-title">Earth and Environmental Science extension - Material sample type</a>
 </td>
@@ -471,7 +473,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="1757595574095" data-listing-file-modified-sort="1757595574766" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="756" data-listing-title-sort="Earth and Environmental Science extension -  Mineral group vocabulary" data-listing-filename-sort="earthenv_material_extension_mineral_group.md">
+<tr data-index="2" data-listing-date-sort="1757691041914" data-listing-file-modified-sort="1757691042585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="756" data-listing-title-sort="Earth and Environmental Science extension -  Mineral group vocabulary" data-listing-filename-sort="earthenv_material_extension_mineral_group.md">
 <td>
 <a href="../models/generated/extensions/earthenv_material_extension_mineral_group.html" class="title listing-title">Earth and Environmental Science extension - Mineral group vocabulary</a>
 </td>
@@ -481,7 +483,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="3" data-listing-date-sort="1757595579420" data-listing-file-modified-sort="1757595584731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="42" data-listing-word-count-sort="8362" data-listing-title-sort="Earth and Environmental Science extension - Rock and sediment materials vocabulary" data-listing-filename-sort="earthenv_material_extension_rock_sediment.md">
+<tr data-index="3" data-listing-date-sort="1757691047313" data-listing-file-modified-sort="1757691052704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="42" data-listing-word-count-sort="8362" data-listing-title-sort="Earth and Environmental Science extension - Rock and sediment materials vocabulary" data-listing-filename-sort="earthenv_material_extension_rock_sediment.md">
 <td>
 <a href="../models/generated/extensions/earthenv_material_extension_rock_sediment.html" class="title listing-title">Earth and Environmental Science extension - Rock and sediment materials vocabulary</a>
 </td>
@@ -491,7 +493,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="4" data-listing-date-sort="1757595585765" data-listing-file-modified-sort="1757595586608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="682" data-listing-title-sort="Earth and Environmental Science extension - Sampled feature role" data-listing-filename-sort="earthenv_sampled_feature_role.md">
+<tr data-index="4" data-listing-date-sort="1757691053763" data-listing-file-modified-sort="1757691054620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="682" data-listing-title-sort="Earth and Environmental Science extension - Sampled feature role" data-listing-filename-sort="earthenv_sampled_feature_role.md">
 <td>
 <a href="../models/generated/extensions/earthenv_sampled_feature_role.html" class="title listing-title">Earth and Environmental Science extension - Sampled feature role</a>
 </td>
@@ -501,7 +503,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="5" data-listing-date-sort="1757595600913" data-listing-file-modified-sort="1757595601811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="635" data-listing-title-sort="Open Context vocabulary extension for material sample object type" data-listing-filename-sort="opencontext_materialsampleobjecttype.md">
+<tr data-index="5" data-listing-date-sort="1757691068980" data-listing-file-modified-sort="1757691069869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="635" data-listing-title-sort="Open Context vocabulary extension for material sample object type" data-listing-filename-sort="opencontext_materialsampleobjecttype.md">
 <td>
 <a href="../models/generated/extensions/opencontext_materialsampleobjecttype.html" class="title listing-title">Open Context vocabulary extension for material sample object type</a>
 </td>
@@ -511,7 +513,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="6" data-listing-date-sort="1757595596568" data-listing-file-modified-sort="1757595599876" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2529" data-listing-title-sort="OpenContext material type extension draft" data-listing-filename-sort="opencontext_material_extension.md">
+<tr data-index="6" data-listing-date-sort="1757691064604" data-listing-file-modified-sort="1757691067983" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2529" data-listing-title-sort="OpenContext material type extension draft" data-listing-filename-sort="opencontext_material_extension.md">
 <td>
 <a href="../models/generated/extensions/opencontext_material_extension.html" class="title listing-title">OpenContext material type extension draft</a>
 </td>
@@ -521,7 +523,7 @@ Subtitle
 
 </tr>
 
-<tr data-index="7" data-listing-file-modified-sort="1757595533300" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-filename-sort="readme.md">
+<tr data-index="7" data-listing-file-modified-sort="1757691012780" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-filename-sort="readme.md">
 <td>
 <a href="../models/generated/extensions/readme.html" class="title listing-title">&nbsp;</a>
 </td>
@@ -579,13 +581,14 @@ Subtitle
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
